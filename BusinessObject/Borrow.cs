@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace BusinessObject
 {
-    class Borrow
+    public class Borrow
     {
+        public int BorrowID { get; set; }
+        public int BorrowerID { get; set; }
+        public string BorrowerName { get; set; }
+        public string Contact { get; set; }
+        public int BookID { get; set; }
+        public DateTime BorrowDate { get; set; }
     }
 }

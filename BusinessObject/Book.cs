@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace BusinessObject
 {
-    class Book
+    public class Book
     {
+        public int BookID { get; set; }
+        public string BookTitle { get; set; }
+        public string Author { get; set; }
+        public int CategoryID { get; set; }
+        public decimal BookPrice { get; set; }
+        public string Status { get; set; }
     }
 }

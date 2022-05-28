@@ -17,13 +17,7 @@ namespace DataAccess
 
         public string GetConnectionString()
         {
-            /*string connectionString;
-            IConfiguration config = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("dbsettings.json", true, true)
-                .Build();
-            connectionString = config["ConnectionString:FStoreDBAssignment"];*/
-            string connectionString = "Server=(local);uid=sa;pwd=sa;database=LibraryDB;TrustServerCertificate=True";
+            string connectionString = "Server=(local);uid=sa;pwd=1234567890;database=LibraryDB;TrustServerCertificate=True";
             return connectionString;
         }
         public void CloseConnection() => dataProvider.CloseConnection(connection);
